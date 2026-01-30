@@ -1,26 +1,18 @@
 @import 'tailwindcss';
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Figma'daki Ana Renkler */
+  --color-brand-black: #000000;
+  --color-brand-gray: #f0f0f0;
+  --color-brand-text-muted: #606060;
+
+  /* Font Tanımları */
+  --font-integral: var(--font-integral-cf);
+  --font-satoshi: var(--font-satoshi);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+  font-family: var(--font-satoshi);
+  background-color: white;
+  color: black;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
