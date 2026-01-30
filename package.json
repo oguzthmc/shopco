@@ -9,18 +9,23 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.90.20",
+    "axios": "^1.13.4",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "zustand": "^5.0.10"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
+    "@7nohe/openapi-react-query-codegen": "^0.5.3",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@tanstack/eslint-plugin-query": "^5.91.3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
-    "tailwindcss": "^4",
+    "tailwindcss": "^4.1.18",
     "typescript": "^5"
   }
 }
