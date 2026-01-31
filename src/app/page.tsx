@@ -1,7 +1,10 @@
+import Hero from '@/components/home/Hero';
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-bold">Shop.co E-Ticaret</h1>
+    <main className="min-h-screen">
+      <Hero />
+      {/* Gelecek adımlarda buraya BrandBar, NewArrivals vb. eklenecek */}
     </main>
   );
 }
