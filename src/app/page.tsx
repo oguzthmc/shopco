@@ -1,10 +1,12 @@
 import Hero from '@/components/home/Hero';
+import BrandBar from '@/components/home/BrandBar';
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Hero />
-      {/* Gelecek adımlarda buraya BrandBar, NewArrivals vb. eklenecek */}
+      <BrandBar />
+      {/* Sırada: New Arrivals / Top Selling */}
     </main>
   );
 }
