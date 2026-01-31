@@ -67,7 +67,7 @@ export default function Hero() {
           {/* Büyük Yıldız (104x104) - Konum: Sağ Üst (Absolute) */}
           <div className="absolute top-[10%] right-[5%] lg:top-20 lg:-right-3 animate-pulse z-20">
             <Image
-              src="/images/hero-sparkle.svg"
+              src="/assets/images/hero-sparkle.svg"
               alt="Sparkle"
               width={104}
               height={104}
@@ -78,7 +78,7 @@ export default function Hero() {
           {/* Küçük Yıldız (56x56) - Konum: Sol Orta (Absolute) */}
           <div className="absolute top-[40%] left-[5%] lg:top-78 lg:-left-3 animate-pulse delay-700 z-20">
             <Image
-              src="/images/hero-sparkle.svg"
+              src="/assets/images/hero-sparkle.svg"
               alt="Sparkle"
               width={56}
               height={56}
@@ -90,7 +90,7 @@ export default function Hero() {
           <div className="relative w-full max-w-125 lg:max-w-none lg:w-150 h-auto lg:h-full">
             {/* object-contain/cover yerine görseli direk yerleştiriyoruz ki taşmaları kontrol edelim */}
             <Image
-              src="/images/hero-couple.jpg"
+              src="/assets/images/hero-couple.jpg"
               alt="Stylish Couple"
               width={600}
               height={663}

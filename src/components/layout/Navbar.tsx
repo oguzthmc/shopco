@@ -10,7 +10,7 @@ export default function Navbar() {
           {/* Mobil Menü İkonu (Varsa lokal, yoksa geçici buton) */}
           <button className="lg:hidden">
             <Image
-              src="/icons/hamburger-menu.svg"
+              src="/assets/icons/hamburger-menu.svg"
               alt="Menu"
               width={24}
               height={24}
@@ -33,7 +33,7 @@ export default function Navbar() {
           >
             Shop
             <Image
-              src="/icons/dropdown.svg"
+              src="/assets/icons/dropdown.svg"
               alt="dropdown"
               width={12}
               height={12}
@@ -56,7 +56,7 @@ export default function Navbar() {
           {/* Arama Çubuğu (Desktop) */}
           <div className="hidden lg:flex items-center bg-[#F0F0F0] rounded-full px-4 py-3 flex-1 max-w-144.25">
             <Image
-              src="/icons/search.svg"
+              src="/assets/icons/search.svg"
               alt="Search"
               width={20}
               height={20}
@@ -74,7 +74,7 @@ export default function Navbar() {
             {/* Mobilde Arama İkonu */}
             <button className="lg:hidden">
               <Image
-                src="/icons/search.svg"
+                src="/assets/icons/search.svg"
                 alt="Search"
                 width={20}
                 height={20}
@@ -84,7 +84,7 @@ export default function Navbar() {
 
             <Link href="/cart" className="hover:opacity-70 transition-opacity">
               <Image
-                src="/icons/shopping-cart.svg"
+                src="/assets/icons/shopping-cart.svg"
                 alt="Cart"
                 width={22}
                 height={20}
@@ -96,7 +96,7 @@ export default function Navbar() {
               className="hover:opacity-70 transition-opacity"
             >
               <Image
-                src="/icons/circle-user.svg"
+                src="/assets/icons/circle-user.svg"
                 alt="Profile"
                 width={20}
                 height={20}
