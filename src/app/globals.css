@@ -11,8 +11,19 @@
   --font-satoshi: var(--font-satoshi);
 }
 
+/* Container yerine Figma'daki 1240px standardını koruyan sınıf.
+  responsive şekilde kenarlardan boşluk bırakır ama 1240px'i geçmez.
+*/
+.frame {
+  @apply max-w-310 mx-auto px-4 md:px-0;
+}
+
 :root {
-  font-family: var(--font-satoshi);
+  font-family: var(--font-satoshi), sans-serif;
   background-color: white;
   color: black;
+}
+
+.integral-text {
+  font-family: var(--font-integral-cf), sans-serif;
 }

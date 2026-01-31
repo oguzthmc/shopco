@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
+import TopBanner from '@/components/layout/TopBanner';
+import Navbar from '@/components/layout/Navbar';
 
 // Integral CF Font Tanımı (Başlıklar)
 const integralCF = localFont({
@@ -56,6 +58,8 @@ export default function RootLayout({
       <body
         className={`${integralCF.variable} ${satoshi.variable} antialiased`}
       >
+        <TopBanner />
+        <Navbar />
         {children}
       </body>
     </html>
