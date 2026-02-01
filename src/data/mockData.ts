@@ -35,3 +35,36 @@ export const newArrivalsData: Product[] = [
     discountPercentage: 30,
   },
 ];
+
+export const topSellingData: Product[] = [
+  {
+    id: 5,
+    title: 'Vertical Striped Shirt',
+    image: '/assets/images/top-selling-img-1.svg',
+    rating: 5.0,
+    price: 212,
+    originalPrice: 232,
+    discountPercentage: 20,
+  },
+  {
+    id: 6,
+    title: 'Courage Graphic T-shirt',
+    image: '/assets/images/top-selling-img-2.svg',
+    rating: 4.0,
+    price: 145,
+  },
+  {
+    id: 7,
+    title: 'Loose Fit Bermuda Shorts',
+    image: '/assets/images/top-selling-img-3.svg',
+    rating: 3.0,
+    price: 80,
+  },
+  {
+    id: 8,
+    title: 'Faded Skinny Jeans',
+    image: '/assets/images/top-selling-img-4.svg',
+    rating: 4.5,
+    price: 210,
+  },
+];

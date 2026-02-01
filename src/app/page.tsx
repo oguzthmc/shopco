@@ -1,6 +1,7 @@
 import Hero from '@/components/home/Hero';
 import BrandBar from '@/components/home/BrandBar';
 import NewArrivals from '@/components/home/NewArrivals';
+import TopSelling from '@/components/home/TopSelling';
 
 export default function Home() {
   return (
@@ -8,7 +9,8 @@ export default function Home() {
       <Hero />
       <BrandBar />
       <NewArrivals />
-      {/* Sırada: Top Selling */}
+      <TopSelling />
+      {/* Sırada: Browse by Dress Style */}
     </main>
   );
 }

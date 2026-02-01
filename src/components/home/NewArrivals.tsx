@@ -5,7 +5,7 @@ import { newArrivalsData } from '@/data/mockData';
 
 export default function NewArrivals() {
   return (
-    <section className="py-16 md:py-20 border-b border-black/10">
+    <section className="py-12 md:py-16">
       <div className="frame">
         {/* Bölüm Başlığı: Integral CF Bold 48px */}
         <h2 className="integral-text font-bold text-[32px] md:text-[48px] text-center mb-8 md:mb-14 leading-none">
