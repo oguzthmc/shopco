@@ -68,3 +68,34 @@ export const topSellingData: Product[] = [
     price: 210,
   },
 ];
+
+export const dressStyleData = [
+  {
+    id: 1,
+    title: 'Casual',
+    image: '/assets/images/dress-style-img-1.svg',
+    // Sol Küçük (Web: 2 birim, Mobil: 1 birim)
+    className: 'col-span-1 md:col-span-2',
+  },
+  {
+    id: 2,
+    title: 'Formal',
+    image: '/assets/images/dress-style-img-2.svg',
+    // Sağ Büyük (Web: 3 birim, Mobil: 1 birim)
+    className: 'col-span-1 md:col-span-3',
+  },
+  {
+    id: 3,
+    title: 'Party',
+    image: '/assets/images/dress-style-img-3.svg',
+    // Sol Küçük (DÜZELTİLDİ: 3 yerine 2 yapıldı, Casual ile hizalandı)
+    className: 'col-span-1 md:col-span-3',
+  },
+  {
+    id: 4,
+    title: 'Gym',
+    image: '/assets/images/dress-style-img-4.svg',
+    // Sağ Büyük (DÜZELTİLDİ: 2 yerine 3 yapıldı, Formal ile hizalandı)
+    className: 'col-span-1 md:col-span-2',
+  },
+];
