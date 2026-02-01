@@ -30,7 +30,7 @@ export default function TopSelling() {
           <Link href="/shop" className="w-full md:w-auto">
             <Button
               variant="outline"
-              className="w-full md:w-54.5 h-13 border-black/10 text-black hover:bg-black hover:text-white"
+              className="w-full md:w-54.5 h-13 border-black/10 text-black cursor-pointer hover:bg-black hover:text-white"
             >
               View All
             </Button>
