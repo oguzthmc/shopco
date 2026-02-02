@@ -3,6 +3,7 @@ import BrandBar from '@/components/home/BrandBar';
 import NewArrivals from '@/components/home/NewArrivals';
 import TopSelling from '@/components/home/TopSelling';
 import DressStyle from '@/components/home/DressStyle';
+import HappyCustomers from '@/components/home/HappyCustomers';
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <NewArrivals />
       <TopSelling />
       <DressStyle />
-      {/* Sırada: Customer Reviews (Happy Customers) */}
+      <HappyCustomers />
     </main>
   );
 }
