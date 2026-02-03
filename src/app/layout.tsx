@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 import TopBanner from '@/components/layout/TopBanner';
 import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
 
 // Integral CF Font Tanımı (Başlıklar)
 const integralCF = localFont({
@@ -60,7 +61,10 @@ export default function RootLayout({
       >
         <TopBanner />
         <Navbar />
+
         {children}
+
+        <Footer />
       </body>
     </html>
   );

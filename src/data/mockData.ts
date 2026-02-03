@@ -172,3 +172,82 @@ export const reviewsData = [
       'I was impressed by how professional and seamless the entire Shop.co experience was. Great selection, accurate sizing guides, and high-quality materials keep me coming back.',
   },
 ];
+
+export const footerLinks = [
+  {
+    title: 'COMPANY',
+    links: [
+      { name: 'About', href: '/about' },
+      { name: 'Features', href: '/features' },
+      { name: 'Works', href: '/works' },
+      { name: 'Career', href: '/career' },
+    ],
+  },
+  {
+    title: 'HELP',
+    links: [
+      { name: 'Customer Support', href: '/support' },
+      { name: 'Delivery Details', href: '/delivery' },
+      { name: 'Terms & Conditions', href: '/terms' },
+      { name: 'Privacy Policy', href: '/privacy' },
+    ],
+  },
+  {
+    title: 'FAQ',
+    links: [
+      { name: 'Account', href: '/account' },
+      { name: 'Manage Deliveries', href: '/manage-deliveries' },
+      { name: 'Orders', href: '/orders' },
+      { name: 'Payments', href: '/payments' },
+    ],
+  },
+  {
+    title: 'RESOURCES',
+    links: [
+      { name: 'Free eBooks', href: '/ebooks' },
+      { name: 'Development Tutorial', href: '/tutorials' },
+      { name: 'How to - Blog', href: '/blog' },
+      { name: 'Youtube Playlist', href: '/youtube' },
+    ],
+  },
+];
+
+export const socialMediaLinks = [
+  {
+    id: 1,
+    icon: '/assets/logos/twitter.svg',
+    link: 'https://twitter.com',
+    bg: 'bg-white',
+    border: 'border-black/20',
+  },
+  {
+    id: 2,
+    icon: '/assets/logos/facebook.svg',
+    link: 'https://facebook.com',
+    bg: 'bg-black',
+    border: 'border-transparent',
+    iconColor: 'brightness-0 invert', // Siyah zemin üstüne beyaz ikon için
+  },
+  {
+    id: 3,
+    icon: '/assets/logos/instagram.svg',
+    link: 'https://instagram.com',
+    bg: 'bg-white',
+    border: 'border-black/20',
+  },
+  {
+    id: 4,
+    icon: '/assets/logos/github.svg',
+    link: 'https://github.com',
+    bg: 'bg-white',
+    border: 'border-black/20',
+  },
+];
+
+export const paymentIcons = [
+  { id: 1, icon: '/assets/logos/visa.svg', alt: 'Visa' },
+  { id: 2, icon: '/assets/logos/mastercard.svg', alt: 'Mastercard' },
+  { id: 3, icon: '/assets/logos/paypal.svg', alt: 'Paypal' },
+  { id: 4, icon: '/assets/logos/apple-pay.svg', alt: 'Apple Pay' },
+  { id: 5, icon: '/assets/logos/google-pay.svg', alt: 'Google Pay' },
+];
