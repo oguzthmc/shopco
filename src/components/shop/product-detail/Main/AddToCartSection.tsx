@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Product } from '@/types/product';
+import { Product } from '@/types/product.types';
 import QuantitySelector from '@/components/ui/QuantitySelector';
 import AddToCartBtn from './AddToCartBtn';
 

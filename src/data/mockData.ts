@@ -1,4 +1,5 @@
-import { Product } from '@/types/product';
+import { Product } from '@/types/product.types';
+import { Review } from '@/types/review.types';
 
 // Figma'daki verilere uygun Mock Data
 export const newArrivalsData: Product[] = [

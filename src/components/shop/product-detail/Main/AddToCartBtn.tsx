@@ -1,6 +1,6 @@
 'use client';
 
-import { Product } from '@/types/product';
+import { Product } from '@/types/product.types';
 import { useCartStore } from '@/store/useCartStore';
 import { useProductStore } from '@/store/useProductStore';
 import Button from '@/components/ui/Button';

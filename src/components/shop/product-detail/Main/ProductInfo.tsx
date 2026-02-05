@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Product } from '@/types/product';
+import { Product } from '@/types/product.types';
 
 const ProductInfo = ({ data }: { data: Product }) => {
   // Yıldızları render etme mantığı

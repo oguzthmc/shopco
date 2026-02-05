@@ -1,5 +1,5 @@
 import ProductGallery from './ProductGallery';
-import { Product } from '@/types/product';
+import { Product } from '@/types/product.types';
 import ProductInfo from './ProductInfo';
 import ColorSelector from './ColorSelector';
 import SizeSelector from './SizeSelector';
