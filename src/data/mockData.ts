@@ -9,7 +9,6 @@ export const newArrivalsData: Product[] = [
     rating: 4.5,
     price: 120,
     gallery: [
-      '/assets/images/new-arrivals-img-1.svg',
       '/assets/images/t-shirt-graphic-1.webp',
       '/assets/images/t-shirt-graphic-2.webp',
       '/assets/images/t-shirt-graphic-3.webp',
@@ -311,3 +310,115 @@ export const colorsData: Color[] = [
 ];
 
 export const sizesData = ['Small', 'Medium', 'Large', 'X-Large'];
+
+// --- RANDOM DATA GENERATOR ---
+
+export type TabButton = {
+  id: number;
+  label: string;
+};
+
+export const tabsData: TabButton[] = [
+  {
+    id: 1,
+    label: 'Product Details',
+  },
+  {
+    id: 2,
+    label: 'Rating & Reviews',
+  },
+  {
+    id: 3,
+    label: 'FAQs',
+  },
+];
+
+export type SpecificationsItem = {
+  label: string;
+  value: string;
+};
+
+// Olası Değer Havuzları
+const materials = [
+  '100% Organic Cotton',
+  '95% Cotton, 5% Elastane',
+  '65% Polyester, 35% Cotton',
+  '100% Linen',
+  'Denim (100% Cotton)',
+  'Recycled Polyester',
+];
+
+const fits = [
+  'Regular Fit',
+  'Slim Fit',
+  'Oversized',
+  'Relaxed Fit',
+  'Skinny Fit',
+  'Muscle Fit',
+];
+
+const patterns = [
+  'Solid Color',
+  'Striped',
+  'Checkered',
+  'Graphic Print',
+  'Colorblock',
+  'Camouflage',
+];
+
+const careInstructions = [
+  'Machine wash warm, tumble dry',
+  'Machine wash cold, hang dry',
+  'Dry clean only',
+  'Hand wash cold, do not bleach',
+  'Wash inside out, iron low heat',
+];
+
+const styles = [
+  'Casual',
+  'Streetwear',
+  'Formal',
+  'Sportswear',
+  'Vintage',
+  'Business Casual',
+];
+
+const origins = [
+  'Made in Turkey',
+  'Made in Italy',
+  'Made in Portugal',
+  'Made in Vietnam',
+  'Made in India',
+];
+
+// Rastgele seçim yapan yardımcı fonksiyon
+const pickRandom = (arr: string[]) =>
+  arr[Math.floor(Math.random() * arr.length)];
+
+// Veriyi oluşturuyoruz
+export const specificationsData: SpecificationsItem[] = [
+  {
+    label: 'Material composition',
+    value: pickRandom(materials),
+  },
+  {
+    label: 'Fit type',
+    value: pickRandom(fits),
+  },
+  {
+    label: 'Pattern',
+    value: pickRandom(patterns),
+  },
+  {
+    label: 'Care instructions',
+    value: pickRandom(careInstructions),
+  },
+  {
+    label: 'Style',
+    value: pickRandom(styles),
+  },
+  {
+    label: 'Origin',
+    value: pickRandom(origins),
+  },
+];

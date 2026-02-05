@@ -1,8 +1,9 @@
 import { notFound } from 'next/navigation';
 
 import BreadcrumbProduct from '@/components/shop/product-detail/BreadcrumbProduct';
-import ProductDetailMainContent from '@/components/shop/product-detail/Main';
+import ProductMain from '@/components/shop/product-detail/Main';
 import { newArrivalsData, topSellingData } from '@/data/mockData';
+import ProductTabs from '@/components/shop/product-detail/Tabs';
 
 // Tüm ürünleri birleştirip arama yapacağız
 const allProducts = [...newArrivalsData, ...topSellingData];
@@ -32,7 +33,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
       <BreadcrumbProduct title={productData.title} />
 
       {/* Main Content Wrapper (Galeri ve Detay Alanı) */}
-      <ProductDetailMainContent data={productData} />
+      <ProductMain data={productData} />
+
+      <ProductTabs />
     </main>
   );
 }
