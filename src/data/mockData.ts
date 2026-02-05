@@ -10,9 +10,9 @@ export const newArrivalsData: Product[] = [
     rating: 4.5,
     price: 120,
     gallery: [
-      '/assets/images/t-shirt-graphic-1.webp',
-      '/assets/images/t-shirt-graphic-2.webp',
-      '/assets/images/t-shirt-graphic-3.webp',
+      '/assets/images/t-shirt-graphic-1.png',
+      '/assets/images/t-shirt-graphic-2.png',
+      '/assets/images/t-shirt-graphic-3.png',
     ],
     description:
       'A versatile t-shirt featuring modern tape details. Crafted from soft, breathable cotton, it provides a unique street-style look while ensuring maximum comfort for daily wear.',
