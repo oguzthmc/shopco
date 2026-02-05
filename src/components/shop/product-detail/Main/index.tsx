@@ -3,6 +3,7 @@ import { Product } from '@/types/product';
 import ProductInfo from './ProductInfo';
 import ColorSelector from './ColorSelector';
 import SizeSelector from './SizeSelector';
+import AddToCartSection from './AddToCartSection';
 
 interface ProductDetailMainContentProps {
   data: Product;
@@ -33,7 +34,7 @@ const ProductDetailMainContent = ({ data }: ProductDetailMainContentProps) => {
 
           <hr className="hidden md:block h-px border-t-black/10 my-3 md:my-6" />
 
-          {/* <AddToCartSection /> Gelecek */}
+          <AddToCartSection data={data} />
         </div>
       </div>
     </section>
