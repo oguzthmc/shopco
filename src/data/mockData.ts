@@ -309,3 +309,5 @@ export const colorsData: Color[] = [
     code: 'bg-[#31344F]',
   },
 ];
+
+export const sizesData = ['Small', 'Medium', 'Large', 'X-Large'];

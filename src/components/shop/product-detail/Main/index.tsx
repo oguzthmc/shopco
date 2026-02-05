@@ -2,6 +2,7 @@ import ProductGallery from './ProductGallery';
 import { Product } from '@/types/product';
 import ProductInfo from './ProductInfo';
 import ColorSelector from './ColorSelector';
+import SizeSelector from './SizeSelector';
 
 interface ProductDetailMainContentProps {
   data: Product;
@@ -21,15 +22,16 @@ const ProductDetailMainContent = ({ data }: ProductDetailMainContentProps) => {
           <ProductInfo data={data} />
 
           {/* Gelecek bileşenler için ayırıcılar ve placeholderlar */}
-          <hr className="h-px border-t-black/10 my-6" />
+          <hr className="h-px border-t-black/10 my-3 md:my-6" />
 
           {/* Renk Seçimi Bileşeni */}
           <ColorSelector />
 
-          <hr className="h-px border-t-black/10 my-6" />
+          <hr className="h-px border-t-black/10 my-3 md:my-6" />
 
-          {/* <SizeSelector /> Gelecek */}
-          <hr className="hidden md:block h-px border-t-black/10 my-6" />
+          <SizeSelector />
+
+          <hr className="hidden md:block h-px border-t-black/10 my-3 md:my-6" />
 
           {/* <AddToCartSection /> Gelecek */}
         </div>
