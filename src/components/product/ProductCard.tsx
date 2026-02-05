@@ -48,7 +48,7 @@ export default function ProductCard({ data }: ProductCardProps) {
     <div className="flex flex-col w-full max-w-73.75">
       {/* 1. Ürün Görseli (Tıklanabilir) */}
       <Link
-        href={`/product/${data.id}`}
+        href={`/shop/product/${data.id}`}
         className="mb-4 w-full h-74.5 relative overflow-hidden rounded-[20px]"
       >
         <Image
