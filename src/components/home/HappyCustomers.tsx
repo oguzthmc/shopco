@@ -4,6 +4,7 @@ import { useMemo, useRef } from 'react';
 import Image from 'next/image';
 import { reviewsData } from '@/data/mockData';
 import Slider, { SliderRef } from '@/components/ui/Slider'; // İsmi güncelledik
+import Rating from '../ui/Rating';
 
 export default function HappyCustomers() {
   // Slider'ı dışarıdan kontrol etmek için referans (Next/Prev butonları için)
@@ -38,20 +39,6 @@ export default function HappyCustomers() {
     }),
     [],
   );
-
-  // Yıldız oluşturma yardımcı fonksiyonu
-  const renderStars = (rating: number) => {
-    return Array.from({ length: rating }).map((_, i) => (
-      <Image
-        key={i}
-        src="/assets/icons/star.svg"
-        alt="star"
-        width={19}
-        height={19}
-        className="mr-1.5"
-      />
-    ));
-  };
 
   return (
     <section className="pb-10 md:pb-20 relative">
@@ -102,7 +89,7 @@ export default function HappyCustomers() {
                   {/* Üst: Yıldızlar ve Kullanıcı Bilgisi */}
                   <div className="flex flex-col gap-3">
                     {/* Yıldızlar */}
-                    <div className="flex">{renderStars(review.rating)}</div>
+                    <Rating rating={review.rating} size={22} />
 
                     {/* İsim ve Onay İkonu */}
                     <div className="flex items-center gap-1 h-6">

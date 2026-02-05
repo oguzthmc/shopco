@@ -1,49 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Product } from '@/types/product.types';
+import Rating from '../ui/Rating';
 
 interface ProductCardProps {
   data: Product;
 }
 
 export default function ProductCard({ data }: ProductCardProps) {
-  // Yıldızları render etme mantığı
-  const renderStars = (rating: number) => {
-    const stars = [];
-    const fullStars = Math.floor(rating);
-    const hasHalfStar = rating % 1 !== 0;
-
-    // Tam Yıldızlar
-    for (let i = 0; i < fullStars; i++) {
-      stars.push(
-        <Image
-          key={`star-${i}`}
-          src="/assets/icons/star.svg"
-          alt="star"
-          width={18}
-          height={18}
-          className="mr-1" // Yıldızlar arası hafif boşluk
-        />,
-      );
-    }
-
-    // Yarım Yıldız
-    if (hasHalfStar) {
-      stars.push(
-        <Image
-          key="half-star"
-          src="/assets/icons/half-star.svg"
-          alt="half star"
-          width={9} // Yarım yıldız genelde tamın yarısı genişlikte veya özel icon boyutunda olur
-          height={18}
-          className="mr-1"
-        />,
-      );
-    }
-
-    return stars;
-  };
-
   return (
     <div className="flex flex-col w-full max-w-73.75">
       {/* 1. Ürün Görseli (Tıklanabilir) */}
@@ -69,7 +33,7 @@ export default function ProductCard({ data }: ProductCardProps) {
         {/* Rating Alanı */}
         <div className="flex items-center mb-2">
           <div className="flex items-center mr-3">
-            {renderStars(data.rating)}
+            <Rating rating={data.rating} size={18} />
           </div>
           {/* Puan Yazısı: Satoshi Regular 14px */}
           <span className="font-satoshi font-normal text-sm text-black/60">

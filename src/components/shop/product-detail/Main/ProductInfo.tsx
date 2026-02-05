@@ -1,45 +1,10 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import { Product } from '@/types/product.types';
+import Rating from '@/components/ui/Rating';
 
 const ProductInfo = ({ data }: { data: Product }) => {
-  // Yıldızları render etme mantığı
-  const renderStars = (rating: number) => {
-    return Array.from({ length: 5 }).map((_, i) => {
-      // Tam yıldız kontrolü (Örn: 4.5 için ilk 4 döngüde tam yıldız basar)
-      if (rating >= i + 1) {
-        return (
-          <Image
-            key={i}
-            src="/assets/icons/star.svg"
-            alt="star"
-            width={24}
-            height={24}
-            className="w-4.5 h-4.5 md:w-6 md:h-6"
-          />
-        );
-      }
-      // Yarım yıldız kontrolü (Örn: 4.5 için i=4 iken buraya girer)
-      else if (rating > i && rating < i + 1) {
-        return (
-          <Image
-            key={i}
-            src="/assets/icons/half-star.svg"
-            alt="half star"
-            width={24}
-            height={24}
-            className="w-4.5 h-4.5 md:w-6 md:h-6" // Tasarımda yarım yıldız boyutu genelde tam ile aynıdır
-          />
-        );
-      }
-      // Boş yıldız göstermek istersen buraya else ekleyebilirsin,
-      // şimdilik tasarımda sadece dolular istendiği için boş geçiyoruz.
-      return null;
-    });
-  };
-
   return (
     <div className="flex flex-col w-full">
       {/* 1. BAŞLIK */}
@@ -49,7 +14,7 @@ const ProductInfo = ({ data }: { data: Product }) => {
 
       {/* 2. RATING (YILDIZLAR) */}
       <div className="flex items-center gap-3 mb-3 md:mb-3.5">
-        <div className="flex gap-1.5">{renderStars(data.rating)}</div>
+        <Rating rating={data.rating} size={24} />
         <span className="font-satoshi font-normal text-xs md:text-sm text-black pt-1">
           {data.rating}
           <span className="text-black/60">/5</span>
