@@ -26,7 +26,7 @@ const QuantitySelector = ({
       <button
         type="button"
         onClick={onDecrease}
-        className="w-5 h-5 flex items-center justify-center hover:opacity-70 transition-opacity"
+        className="w-3 h-3 sm:w-5 sm:h-5 flex items-center justify-center hover:opacity-70 transition-opacity"
         aria-label="Decrease quantity"
       >
         <Image
@@ -44,7 +44,7 @@ const QuantitySelector = ({
       <button
         type="button"
         onClick={onIncrease}
-        className="w-5 h-5 flex items-center justify-center hover:opacity-70 transition-opacity"
+        className="w-3 h-3 sm:w-5 sm:h-5 flex items-center justify-center hover:opacity-70 transition-opacity"
         aria-label="Increase quantity"
       >
         <Image

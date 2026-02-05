@@ -25,13 +25,13 @@ const ProductDetails = () => {
             className="grid grid-cols-3 gap-4 border-b border-black/5 last:border-none"
             key={i}
           >
-            <div className="py-2 lg:py-3">
+            <div className="py-2.5 lg:py-4">
               <p className="font-satoshi font-normal text-sm md:text-base text-black/60">
                 {item.label}
               </p>
             </div>
 
-            <div className="col-span-2 py-2 lg:py-3">
+            <div className="col-span-2 py-2.5 lg:py-4">
               <p className="font-satoshi font-medium text-sm md:text-base text-black">
                 {item.value}
               </p>

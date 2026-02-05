@@ -14,7 +14,7 @@ export default function Button({
   ...props
 }: ButtonProps) {
   const baseStyles =
-    'rounded-full transition-all duration-300 font-medium font-satoshi text-base flex items-center justify-center';
+    'rounded-full transition-all duration-300 font-medium font-satoshi text-[14px] sm:text-base flex items-center justify-center';
 
   const variants = {
     primary: 'bg-black text-white hover:bg-gray-800',
