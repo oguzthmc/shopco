@@ -289,3 +289,23 @@ export const paymentIcons = [
   { id: 4, icon: '/assets/logos/apple-pay.svg', alt: 'Apple Pay' },
   { id: 5, icon: '/assets/logos/google-pay.svg', alt: 'Google Pay' },
 ];
+
+export type Color = {
+  name: string;
+  code: string; // Tailwind class (örn: bg-[#4F4631])
+};
+
+export const colorsData: Color[] = [
+  {
+    name: 'Brown',
+    code: 'bg-[#4F4631]',
+  },
+  {
+    name: 'Green',
+    code: 'bg-[#314F4A]',
+  },
+  {
+    name: 'Blue',
+    code: 'bg-[#31344F]',
+  },
+];

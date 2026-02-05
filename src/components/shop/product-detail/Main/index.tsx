@@ -1,7 +1,7 @@
-import React from 'react';
 import ProductGallery from './ProductGallery';
 import { Product } from '@/types/product';
 import ProductInfo from './ProductInfo';
+import ColorSelector from './ColorSelector';
 
 interface ProductDetailMainContentProps {
   data: Product;
@@ -11,7 +11,7 @@ const ProductDetailMainContent = ({ data }: ProductDetailMainContentProps) => {
   return (
     <section className="mb-10 md:mb-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {/* SOL KOLON: Galeri */}
+        {/* SOL: Galeri */}
         <div className="w-full">
           <ProductGallery product={data} />
         </div>
@@ -23,7 +23,9 @@ const ProductDetailMainContent = ({ data }: ProductDetailMainContentProps) => {
           {/* Gelecek bileşenler için ayırıcılar ve placeholderlar */}
           <hr className="h-px border-t-black/10 my-6" />
 
-          {/* <ColorSelector /> Gelecek */}
+          {/* Renk Seçimi Bileşeni */}
+          <ColorSelector />
+
           <hr className="h-px border-t-black/10 my-6" />
 
           {/* <SizeSelector /> Gelecek */}
