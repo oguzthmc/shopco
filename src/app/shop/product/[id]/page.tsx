@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation';
-// İlgili mock dataları import ediyoruz
-import { newArrivalsData, topSellingData } from '@/data/mockData';
+
 import BreadcrumbProduct from '@/components/shop/product-detail/BreadcrumbProduct';
+import ProductDetailMainContent from '@/components/shop/product-detail/Main';
+import { newArrivalsData, topSellingData } from '@/data/mockData';
 
 // Tüm ürünleri birleştirip arama yapacağız
 const allProducts = [...newArrivalsData, ...topSellingData];
@@ -30,30 +31,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
       {/* Breadcrumb Bileşeni */}
       <BreadcrumbProduct title={productData.title} />
 
-      {/* Product Detail Alanı (Header) - Şimdilik placeholder */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-11">
-        {/* Sol Taraf: Galeri */}
-        <div className="bg-[#F0EEED] rounded-[20px] h-75 md:h-132.5 flex items-center justify-center">
-          <span className="text-black/50">
-            Gallery Area (ID: {productData.id})
-          </span>
-        </div>
-
-        {/* Sağ Taraf: Detaylar */}
-        <div className="flex flex-col gap-6">
-          <h1 className="integral-text font-bold text-[40px] leading-none uppercase">
-            {productData.title}
-          </h1>
-          <p className="font-satoshi text-black/60">
-            Product Details Placeholder
-          </p>
-        </div>
-      </section>
-
-      {/* Tabs Placeholder */}
-      <div className="bg-gray-50 h-20 rounded mb-10 flex items-center justify-center">
-        Tabs Component Placeholder
-      </div>
+      {/* Main Content Wrapper (Galeri ve Detay Alanı) */}
+      <ProductDetailMainContent data={productData} />
     </main>
   );
 }

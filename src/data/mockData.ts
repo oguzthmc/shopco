@@ -8,6 +8,12 @@ export const newArrivalsData: Product[] = [
     image: '/assets/images/new-arrivals-img-1.svg',
     rating: 4.5,
     price: 120,
+    gallery: [
+      '/assets/images/new-arrivals-img-1.svg',
+      '/assets/images/t-shirt-graphic-1.webp',
+      '/assets/images/t-shirt-graphic-2.webp',
+      '/assets/images/t-shirt-graphic-3.webp',
+    ],
   },
   {
     id: 2,
@@ -17,6 +23,12 @@ export const newArrivalsData: Product[] = [
     price: 240,
     originalPrice: 260,
     discountPercentage: 20,
+    gallery: [
+      '/assets/images/new-arrivals-img-2.svg',
+      '/assets/images/skinny-fit-jeans-1.webp',
+      '/assets/images/skinny-fit-jeans-2.webp',
+      '/assets/images/skinny-fit-jeans-3.webp',
+    ],
   },
   {
     id: 3,
@@ -52,6 +64,10 @@ export const topSellingData: Product[] = [
     image: '/assets/images/top-selling-img-2.svg',
     rating: 4.0,
     price: 145,
+    gallery: [
+      '/assets/images/top-selling-img-2.svg',
+      '/assets/images/courage-graphic-t-shirt.webp',
+    ],
   },
   {
     id: 7,
@@ -59,6 +75,12 @@ export const topSellingData: Product[] = [
     image: '/assets/images/top-selling-img-3.svg',
     rating: 3.0,
     price: 80,
+    gallery: [
+      '/assets/images/top-selling-img-3.svg',
+      '/assets/images/loose-fit-bermuda-shorts-1.webp',
+      '/assets/images/loose-fit-bermuda-shorts-2.webp',
+      '/assets/images/loose-fit-bermuda-shorts-3.webp',
+    ],
   },
   {
     id: 8,
