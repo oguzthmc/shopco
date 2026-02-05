@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductGallery from './ProductGallery';
 import { Product } from '@/types/product';
+import ProductInfo from './ProductInfo';
 
 interface ProductDetailMainContentProps {
   data: Product;
@@ -15,14 +16,20 @@ const ProductDetailMainContent = ({ data }: ProductDetailMainContentProps) => {
           <ProductGallery product={data} />
         </div>
 
-        {/* SAĞ KOLON: Ürün Bilgileri (Şimdilik Placeholder) */}
-        <div className="flex flex-col gap-6">
-          {/* Buraya ProductInfo component'i gelecek */}
-          <div className="p-4 border border-dashed border-gray-300 rounded-lg">
-            <h2 className="text-xl font-bold mb-2">Details Placeholder</h2>
-            <p>Title: {data.title}</p>
-            <p>Price: ${data.price}</p>
-          </div>
+        {/* SAĞ: Bilgiler + Seçimler */}
+        <div className="w-full">
+          <ProductInfo data={data} />
+
+          {/* Gelecek bileşenler için ayırıcılar ve placeholderlar */}
+          <hr className="h-px border-t-black/10 my-6" />
+
+          {/* <ColorSelector /> Gelecek */}
+          <hr className="h-px border-t-black/10 my-6" />
+
+          {/* <SizeSelector /> Gelecek */}
+          <hr className="hidden md:block h-px border-t-black/10 my-6" />
+
+          {/* <AddToCartSection /> Gelecek */}
         </div>
       </div>
     </section>

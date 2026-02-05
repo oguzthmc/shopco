@@ -7,4 +7,5 @@ export interface Product {
   originalPrice?: number; // İndirimsiz fiyat (Opsiyonel)
   discountPercentage?: number; // İndirim oranı (Opsiyonel)
   gallery?: string[];
+  description?: string;
 }

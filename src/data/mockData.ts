@@ -14,6 +14,8 @@ export const newArrivalsData: Product[] = [
       '/assets/images/t-shirt-graphic-2.webp',
       '/assets/images/t-shirt-graphic-3.webp',
     ],
+    description:
+      'A versatile t-shirt featuring modern tape details. Crafted from soft, breathable cotton, it provides a unique street-style look while ensuring maximum comfort for daily wear.',
   },
   {
     id: 2,
@@ -29,6 +31,8 @@ export const newArrivalsData: Product[] = [
       '/assets/images/skinny-fit-jeans-2.webp',
       '/assets/images/skinny-fit-jeans-3.webp',
     ],
+    description:
+      'These skinny fit jeans offer a sleek, modern silhouette. Made from high-quality stretch denim, they provide the perfect balance of style and flexibility for a sharp, tailored appearance.',
   },
   {
     id: 3,
@@ -36,6 +40,8 @@ export const newArrivalsData: Product[] = [
     image: '/assets/images/new-arrivals-img-3.svg',
     rating: 4.5,
     price: 180,
+    description:
+      'A classic checkered shirt that elevates your casual wardrobe. With its timeless pattern and comfortable fit, this shirt is ideal for both office days and weekend outings.',
   },
   {
     id: 4,
@@ -45,6 +51,8 @@ export const newArrivalsData: Product[] = [
     price: 130,
     originalPrice: 160,
     discountPercentage: 30,
+    description:
+      'Add a sporty touch to your outfit with this sleeve striped t-shirt. The bold stripe details on the sleeves create a dynamic look, making it a perfect choice for a casual, active lifestyle.',
   },
 ];
 
@@ -57,6 +65,8 @@ export const topSellingData: Product[] = [
     price: 212,
     originalPrice: 232,
     discountPercentage: 20,
+    description:
+      'Make a statement with this vertical striped shirt. The bold vertical lines offer a slimming effect and a sophisticated aesthetic, perfect for layering or wearing on its own.',
   },
   {
     id: 6,
@@ -68,6 +78,8 @@ export const topSellingData: Product[] = [
       '/assets/images/top-selling-img-2.svg',
       '/assets/images/courage-graphic-t-shirt.webp',
     ],
+    description:
+      'Express your personality with this Courage graphic t-shirt. Featuring a bold design and soft fabric, this tee combines meaningful art with everyday comfort.',
   },
   {
     id: 7,
@@ -81,6 +93,8 @@ export const topSellingData: Product[] = [
       '/assets/images/loose-fit-bermuda-shorts-2.webp',
       '/assets/images/loose-fit-bermuda-shorts-3.webp',
     ],
+    description:
+      'Stay cool and comfortable with these loose fit Bermuda shorts. Designed for a relaxed vibe, they are the ultimate summer essential for beach trips or casual city walks.',
   },
   {
     id: 8,
@@ -88,6 +102,8 @@ export const topSellingData: Product[] = [
     image: '/assets/images/top-selling-img-4.svg',
     rating: 4.5,
     price: 210,
+    description:
+      'Achieve a rugged, vintage look with these faded skinny jeans. The distressed wash adds character to the streamlined fit, making them a trendy addition to any denim collection.',
   },
 ];
 
