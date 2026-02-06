@@ -15,7 +15,7 @@ const ProductDetails = () => {
 
   return (
     <div className="w-full">
-      <h3 className="font-satoshi font-bold text-base sm:text-2xl text-black mb-4 sm:mb-5">
+      <h3 className="font-satoshi font-bold text-xl sm:text-2xl text-black mb-3 sm:mb-5">
         Product Specifications
       </h3>
 

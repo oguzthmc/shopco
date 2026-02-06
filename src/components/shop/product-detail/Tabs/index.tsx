@@ -15,7 +15,7 @@ const ProductTabs = () => {
   return (
     <div className="w-full mt-5 md:mt-8 mb-6 md:mb-10">
       {/* --- Tab Başlıkları (Navigation) --- */}
-      <div className="grid grid-cols-3 items-center mb-6 sm:mb-8 border-b border-black/10 relative">
+      <div className="grid grid-cols-3 items-center mb-5 sm:mb-8 border-b border-black/10 relative">
         {tabsData.map((tab) => (
           <button
             key={tab.id}

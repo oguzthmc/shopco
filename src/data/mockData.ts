@@ -138,20 +138,22 @@ export const dressStyleData = [
   },
 ];
 
-export const reviewsData = [
+export const reviewsData: Review[] = [
   {
     id: 1,
     name: 'Sarah M.',
     rating: 5,
     comment:
       "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
+    date: 'August 14, 2023',
   },
   {
     id: 2,
     name: 'Alex K.',
-    rating: 5,
+    rating: 3.5,
     comment:
       'Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.',
+    date: 'August 15, 2023',
   },
   {
     id: 3,
@@ -159,13 +161,15 @@ export const reviewsData = [
     rating: 5,
     comment:
       "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
+    date: 'August 16, 2023',
   },
   {
     id: 4,
     name: 'Mooen',
-    rating: 5,
+    rating: 4,
     comment:
       "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
+    date: 'August 17, 2023',
   },
   {
     id: 5,
@@ -173,20 +177,23 @@ export const reviewsData = [
     rating: 5,
     comment:
       'Shopping at Shop.co has been an amazing experience from start to finish. The website is easy to use, product photos are accurate, and the quality of the clothes exceeded what I expected for the price.',
+    date: 'August 18, 2023',
   },
   {
     id: 6,
     name: 'Daniel T.',
-    rating: 4,
+    rating: 3.5,
     comment:
-      'I’ve ordered from Shop.co multiple times and have always been satisfied. The fabrics feel premium, sizing is consistent, and delivery is fast. Definitely a reliable online clothing store.',
+      "I've ordered from Shop.co multiple times and have always been satisfied. The fabrics feel premium, sizing is consistent, and delivery is fast. Definitely a reliable online clothing store.",
+    date: 'August 19, 2023',
   },
   {
     id: 7,
     name: 'Olivia P.',
-    rating: 5,
+    rating: 3,
     comment:
       'What I love most about Shop.co is the balance between trendy designs and everyday wear. Everything I’ve purchased fits perfectly and feels comfortable even after several washes.',
+    date: 'August 20, 2023',
   },
   {
     id: 8,
@@ -194,6 +201,7 @@ export const reviewsData = [
     rating: 4,
     comment:
       'Shop.co offers a wide variety of styles that make online shopping enjoyable. The checkout process is smooth, prices are fair, and customer support responds quickly when needed.',
+    date: 'August 21, 2023',
   },
   {
     id: 9,
@@ -201,13 +209,15 @@ export const reviewsData = [
     rating: 5,
     comment:
       'From browsing to delivery, Shop.co makes online shopping effortless. The clothing quality, modern designs, and attention to detail make it one of my favorite fashion e-commerce sites.',
+    date: 'August 22, 2023',
   },
   {
     id: 10,
     name: 'Liam H.',
-    rating: 5,
+    rating: 2.5,
     comment:
       'I was impressed by how professional and seamless the entire Shop.co experience was. Great selection, accurate sizing guides, and high-quality materials keep me coming back.',
+    date: 'August 23, 2023',
   },
 ];
 
